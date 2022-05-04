@@ -36,6 +36,10 @@
     overflow: visible;
   }
 
+  &__matrashidden {
+    display: none;
+  }
+
   &__matras {
     width: 705px;
     position: absolute;
@@ -64,104 +68,141 @@
   }
 
   @include maxmedia(1260px) {
-    &__matras{
+    &__matras {
       left: calc(50% - 100px);
     }
   }
 
-  @include maxmedia(1220px){
-    &__header{
+  @include maxmedia(1220px) {
+    &__header {
       font-size: 85px;
       line-height: 90px;
     }
 
-    &__matras{
-      width:600px;
+    &__matras {
+      width: 600px;
     }
   }
 
-  @include maxmedia(1020px){
-    &__header{
+  @include maxmedia(1020px) {
+    &__header {
       font-size: 70px;
       line-height: 85px;
-      width:550px;
+      width: 550px;
     }
 
-    &__matras{
+    &__matras {
       width: 550px;
       left: calc(50% - 120px);
     }
   }
 
-  @include maxmedia(900px){
+  @include maxmedia(900px) {
 
-    &__header{
+    &__header {
       font-size: 65px;
       line-height: 80px;
     }
 
-    &__matras{
+    &__matras {
       width: 500px;
       top: 120px;
       left: calc(50% - 70px);
     }
   }
 
-  @include maxmedia(880px){
-    &__header{
+  @include maxmedia(880px) {
+    &__header {
       font-size: 60px;
       line-height: 75px;
     }
 
-    &__matras{
+    &__matras {
       width: 450px;
       top: 100px;
       left: calc(50% - 60px);
     }
   }
 
-  @include maxmedia(800px){
-    &__header{
+  @include maxmedia(800px) {
+    &__header {
       font-size: 55px;
       line-height: 70px;
-      width:420px;
+      width: 420px;
     }
 
-    &__matras{
+    &__matras {
       width: 450px;
       top: 80px;
       left: calc(50% - 80px);
     }
   }
 
-  @include maxmedia(768px){
-    &__header{
+  @include maxmedia(768px) {
+    &__header {
       font-size: 50px;
       line-height: 65px;
-      width:380px;
+      width: 380px;
     }
 
-    &__matras{
+    &__matras {
       width: 400px;
       top: 60px;
       left: calc(50% - 50px);
     }
   }
 
-  @include maxmedia(700px){
-    &__header{
+  @include maxmedia(700px) {
+    &__header {
       font-size: 45px;
       line-height: 60px;
-      width:350px;
+      width: 350px;
     }
 
-    &__matras{
-      width: 350px;
+    &__matras {
+      width: 359px;
       top: 60px;
       left: calc(50% - 40px);
     }
   }
-    
 
-  
+  @include maxmedia(650px) {
+
+    &__header {
+      font-family: 'Abril Fatface';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 41px;
+      line-height: 55px;
+      color: #01384D;
+    }
+
+    &__matras {
+      left: calc(50% - 70px);
+    }
+  }
+
+  @include maxmedia(600px) {
+    &__right {
+      display: none;
+    }
+
+    &__matrashidden {
+      display: block;
+      margin-top: 39px;
+    }
+
+    &__container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__header {
+      width: 420px;
+    }
+
+  }
+
+
+
 }

@@ -3,6 +3,7 @@ import './intro.scss'
 import ArrowIcon from '../../assets/images/intro/arrow.svg';
 import Button from '../button/button';
 import Matras from '../../assets/images/intro/krovat.png';
+import '../../assets/fonts/AbrilFatfase/stylesheet.scss';
 const Intro = () => {
   return (
     <div className='intro'>
@@ -13,6 +14,7 @@ const Intro = () => {
               <h1 className='intro__header'>
                 Kechalari sokin dam oling
               </h1>
+              <img className='intro__matrashidden' src={Matras} alt="Matras" width={359}/>
               <Button text={'Kategoriyalar'} img={ArrowIcon}/>
               <div className='intro__progress'>
                   <span className='intro__prog'>
