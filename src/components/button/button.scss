@@ -1,0 +1,25 @@
+.sp_button{
+  width: 180px;
+  height: 46px;
+  background: #FFFFFF;
+  border: 2px solid #01384D;
+  box-sizing: border-box;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #01384D;
+
+  &:hover {
+    background: #01384D;
+    color: #FFFFFF;
+    transition: color .5s ease-in-out;
+    border: 2px solid #FFFFFF;
+  }
+}
