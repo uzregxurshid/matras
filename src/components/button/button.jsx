@@ -3,8 +3,9 @@ import './button.scss'
 const Button = (props) => {
 
   return (
-    <button className='sp_button' style={{ width: props.width, height:props.height }} onClick={props.onClick}>
+    <button className='spbutton' style={{ width: props.width, height:props.height }} onClick={props.onClick}>
       {props.text}
+      <img className='spbutton__img' src={props.img} alt={props.alt}/>
     </button>
   )
 }
