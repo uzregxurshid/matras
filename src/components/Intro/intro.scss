@@ -107,9 +107,61 @@
     }
   }
 
-  @include maxmedia(800px){
-    
+  @include maxmedia(880px){
+    &__header{
+      font-size: 60px;
+      line-height: 75px;
+    }
+
+    &__matras{
+      width: 450px;
+      top: 100px;
+      left: calc(50% - 60px);
+    }
   }
+
+  @include maxmedia(800px){
+    &__header{
+      font-size: 55px;
+      line-height: 70px;
+      width:420px;
+    }
+
+    &__matras{
+      width: 450px;
+      top: 80px;
+      left: calc(50% - 80px);
+    }
+  }
+
+  @include maxmedia(768px){
+    &__header{
+      font-size: 50px;
+      line-height: 65px;
+      width:380px;
+    }
+
+    &__matras{
+      width: 400px;
+      top: 60px;
+      left: calc(50% - 50px);
+    }
+  }
+
+  @include maxmedia(700px){
+    &__header{
+      font-size: 45px;
+      line-height: 60px;
+      width:350px;
+    }
+
+    &__matras{
+      width: 350px;
+      top: 60px;
+      left: calc(50% - 40px);
+    }
+  }
+    
 
   
 }
