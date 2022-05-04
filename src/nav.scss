@@ -1,0 +1,26 @@
+@mixin list-unstyled{
+  list-style: none;
+  padding-left: 0;
+}
+
+.nav {
+  &__list {
+    display: flex;
+    @include list-unstyled();
+    margin-top: 0;
+  }
+
+  &__items ~ &__items {
+    margin-left: 50px;
+  }
+
+  &__link {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #01384D;
+    text-decoration: none;
+  }
+}
