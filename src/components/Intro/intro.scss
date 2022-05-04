@@ -1,0 +1,115 @@
+@mixin maxmedia($size) {
+  @media only screen and (max-width: $size) {
+    @content;
+  }
+}
+
+@mixin minmedia($size) {
+  @media only screen and (min-width: $size) {
+    @content;
+  }
+}
+
+.intro {
+  background: #EABF9F;
+  padding-top: 26px;
+  padding-bottom: 68px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  &__header {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 90px;
+    line-height: 105px;
+    color: #01384D;
+    width: 735px;
+    margin-bottom: 50px;
+  }
+
+  &__left {
+    overflow: visible;
+  }
+
+  &__matras {
+    width: 705px;
+    position: absolute;
+    left: calc(50% - 80px);
+    top: 155px;
+  }
+
+  &__progress {
+    margin-top: 100px;
+  }
+
+  &__prog {
+    width: 250px;
+    height: 3px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+
+    &--current {
+      width: 50px;
+      height: 3px;
+      background: #01384D;
+      border-radius: 10px
+    }
+  }
+
+  @include maxmedia(1260px) {
+    &__matras{
+      left: calc(50% - 100px);
+    }
+  }
+
+  @include maxmedia(1220px){
+    &__header{
+      font-size: 85px;
+      line-height: 90px;
+    }
+
+    &__matras{
+      width:600px;
+    }
+  }
+
+  @include maxmedia(1020px){
+    &__header{
+      font-size: 70px;
+      line-height: 85px;
+      width:550px;
+    }
+
+    &__matras{
+      width: 550px;
+      left: calc(50% - 120px);
+    }
+  }
+
+  @include maxmedia(900px){
+
+    &__header{
+      font-size: 65px;
+      line-height: 80px;
+    }
+
+    &__matras{
+      width: 500px;
+      top: 120px;
+      left: calc(50% - 70px);
+    }
+  }
+
+  @include maxmedia(800px){
+    
+  }
+
+  
+}
