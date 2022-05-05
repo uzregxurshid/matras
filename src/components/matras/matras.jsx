@@ -69,7 +69,16 @@ const Matrass = (props) => {
 
           <div className='matras__price'>
             <div className='matras__price--info'>Narxi</div>
-            <div className='matras__price--pricing'>{props.price || "1 699 999 so'm"}</div>
+            <div className='matras__price--flex'>
+              {
+                props.sale&&(
+                  <div className='matras__price--old'>
+                  {props.old}
+                   </div>
+                )
+              }
+              <div className='matras__price--pricing'>{props.price || "1 699 999 so'm"}</div>
+            </div>
           </div>
 
           <Button text={"Buyurtma berish"} img={Cart} alt={"Cart"} onClick={props.onOrder} />

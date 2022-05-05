@@ -95,6 +95,23 @@
       margin-top: 7px;
       margin-bottom: 25px;
     }
+
+    &--flex {
+      display: flex;
+      align-items: baseline;
+    }
+
+    &--old {
+      font-family: 'Raleway', Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 21px;
+      text-decoration-line: line-through;
+      color: #FF5D5D;
+      opacity: 0.8;
+      margin-right: 20px;
+    }
   }
 
   &__badges {
@@ -159,4 +176,6 @@
   &__img {
     margin-top: 66px;
   }
+
+
 }

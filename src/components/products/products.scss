@@ -3,6 +3,19 @@
   padding-left: 0;
 }
 
+@mixin maxmedia($size) {
+  @media only screen and (max-width: $size) {
+    @content;
+  }
+}
+
+@mixin minmedia($size) {
+  @media only screen and (min-width: $size) {
+    @content;
+  }
+}
+
+
 .pro {
   margin-top: 80px;
 
@@ -25,6 +38,7 @@
     display: flex;
     @include list-unstyled;
     margin-top: 64px;
+    margin-bottom: 0;
   }
 
   &__btn {
@@ -79,4 +93,20 @@
     margin-bottom: 20px;
   }
 
+  &__bazar{
+    display: none;
+    @include list-unstyled();
+  }
+
+  &__hr{
+    opacity: 0.3;
+    width: 100vw;
+    height: 0.5px;
+    background:  #01384D;
+    margin-top: -1px;
+  }
+
+  &__products{
+    margin-top: 20px;
+  }
 }

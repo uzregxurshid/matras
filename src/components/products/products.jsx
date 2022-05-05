@@ -23,8 +23,14 @@ const Products = () => {
           <hr className="pro__hr" />
           <div className='pro__main'>
 
-          <Matras new={true} />
-          <Matras sale={true} img={RedMatras}/>
+            <ul className='pro__bazar'>
+              <li className='pro__products'>
+                <Matras new={true}/>
+              </li>
+              <li className="pro__products">
+                <Matras sale={true} img={RedMatras} old={"1 699 999 so'm"}/>
+              </li>
+            </ul>
 
           </div>
         </div>
