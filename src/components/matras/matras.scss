@@ -3,6 +3,19 @@
   padding-left: 0;
 }
 
+
+@mixin maxmedia($size) {
+  @media only screen and (max-width: $size) {
+    @content;
+  }
+}
+
+@mixin minmedia($size) {
+  @media only screen and (min-width: $size) {
+    @content;
+  }
+}
+
 .matras {
 
   &__container {
@@ -21,7 +34,7 @@
   }
 
   &__header {
-    font-family: 'Raleway';
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -177,5 +190,137 @@
     margin-top: 66px;
   }
 
+  @include maxmedia(1200px) {
+
+    &__header {
+      font-size: 35px;
+    }
+  }
+
+  @include maxmedia(1080px) {
+    &__right {
+      width: 500px;
+    }
+
+    &__info {
+      font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 26px;
+    }
+
+    &__list {
+      margin-top: 15px;
+    }
+
+    &__define {
+      font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 14px;
+      color: #01384D;
+      opacity: 0.6;
+    }
+
+    &__fullinfo {
+      font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 23px;
+      color: #01384D;
+      opacity: 0.6;
+      margin-top: 15px;
+    }
+
+
+    &__header {
+      font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 27px;
+      color: #01384D;
+    }
+
+    &__price {
+
+      &--pricing {
+        font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 30px;
+        color: #01384D;
+      }
+
+
+      &--info {
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+        color: #01384D;
+        opacity: 0.6;
+      }
+    }
+  }
+
+  @include maxmedia(1024px) {
+    &__right {
+      margin-left: 30px;
+    }
+
+    &__list {
+      width: 270px;
+      flex-wrap: wrap;
+    }
+  }
+
+  @include maxmedia(880px) {
+    &__list {
+      margin-top: 0;
+    }
+
+
+    &__price {
+      
+      &--info {
+        margin-top: 10px;
+      }
+
+      &--pricing{
+        margin-bottom: 10px;
+      }
+    }
+
+    &__badges{
+
+      &--new, &--sale {
+        font-family: 'Josefin Sans',Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 14px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+      }
+
+      &--zoom{
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+    &__header{
+      white-space: nowrap;
+    }
+
+    &__right{
+      width:350px;
+    }
+  }
 
 }
