@@ -28,7 +28,13 @@ const Products = () => {
                 <Matras new={true}/>
               </li>
               <li className="pro__products">
-                <Matras sale={true} img={RedMatras} old={"1 699 999 so'm"}/>
+                <Matras new={true}/>
+              </li>
+              <li className="pro__products">
+                <Matras new={true}/>
+              </li>
+              <li className="pro__products">
+                <Matras new={true} sale={true} img={RedMatras} old={"1 699 999 so'm"}/>
               </li>
             </ul>
 
