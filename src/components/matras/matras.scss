@@ -1,0 +1,157 @@
+.matras {
+
+  &__container {
+    display: flex;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background: #F6FBFF;
+    border: 1px solid #C7DFF5;
+  }
+
+  &__right {
+    width: 636px;
+    margin-left: 100px;
+  }
+
+  &__header {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    color: #01384D;
+  }
+
+  &__list {
+    display: flex;
+    @include list-unstyled();
+    align-items: center;
+    justify-content: space-between;
+  }
+
+
+
+  &__define {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #01384D;
+    opacity: 0.6;
+  }
+
+  &__info {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: #01384D;
+    white-space: nowrap;
+    margin-top: 7px;
+  }
+
+  &__fullinfo {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    color: #01384D;
+    opacity: 0.6;
+    max-width: 636px;
+    width: 100%;
+  }
+
+
+  &__price {
+    &--info {
+      margin-top: 25px;
+      font-family: 'Raleway', Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #01384D;
+      opacity: 0.6;
+    }
+
+    &--pricing {
+      font-family: 'Raleway', Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 35px;
+      color: #01384D;
+      margin-top: 7px;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__badges {
+    display: flex;
+    justify-content: space-between;
+
+    &--left {
+      display: flex;
+    }
+
+    &--new {
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 184px;
+      height: 36px;
+      background: #FF6B6B;
+      border-radius: 5px;
+    }
+
+    &--sale {
+      font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 14px;
+      text-align: center;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 114px;
+      height: 36px;
+      background: #1FCA25;
+      border-radius: 5px;
+      margin-left: 30px;
+    }
+
+    &--zoom {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+
+      &:hover {
+        filter: contrast(0.6);
+      }
+    }
+  }
+
+  &__img {
+    margin-top: 66px;
+  }
+}
