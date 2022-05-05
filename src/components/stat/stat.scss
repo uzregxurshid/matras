@@ -1,0 +1,35 @@
+.stat {
+  &__list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item~&__item {
+    margin-left: 200px;
+  }
+
+  &__header {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 120px;
+    text-align: center;
+    color: #01384d;
+    margin: 0;
+  }
+
+  &__desc {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    margin: 0;
+    white-space: nowrap;
+    color: #01384d;
+    margin-top: 10px;
+  }
+}
