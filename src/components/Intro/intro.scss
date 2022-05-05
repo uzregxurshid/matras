@@ -190,6 +190,7 @@
     &__matrashidden {
       display: block;
       margin-top: 39px;
+      margin-bottom: 39px;
     }
 
     &__container {
@@ -199,10 +200,27 @@
 
     &__header {
       width: 420px;
+      margin-bottom: 0;
     }
 
+    &__progress {
+      margin-top: 50px;
+    }
   }
 
+  @include maxmedia(426px){
+    &__header{
+      width:320px;
+    }
+  }
+
+  @include maxmedia(341px){
+    &__header{
+      width:300px;
+      font-size: 40px;
+    }
+  }
+  
 
 
 }
