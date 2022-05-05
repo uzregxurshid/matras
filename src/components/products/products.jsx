@@ -2,6 +2,7 @@ import './products.scss';
 
 import '../../assets/fonts/opensans/stylesheet.scss';
 import Matras from '../matras/matras';
+import RedMatras from '../../assets/images/products/redmatras.png'
 const Products = () => {
   return (
     <div className="pro">
@@ -22,7 +23,8 @@ const Products = () => {
           <hr className="pro__hr" />
           <div className='pro__main'>
 
-          <Matras/>
+          <Matras new={true} />
+          <Matras sale={true} img={RedMatras}/>
 
           </div>
         </div>
