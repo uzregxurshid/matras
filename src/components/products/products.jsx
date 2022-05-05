@@ -1,6 +1,7 @@
 import './products.scss';
 
 import '../../assets/fonts/opensans/stylesheet.scss';
+import Matras from '../matras/matras';
 const Products = () => {
   return (
     <div className="pro">
@@ -21,7 +22,7 @@ const Products = () => {
           <hr className="pro__hr" />
           <div className='pro__main'>
 
-
+          <Matras/>
 
           </div>
         </div>

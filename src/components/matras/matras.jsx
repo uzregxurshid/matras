@@ -4,7 +4,7 @@ import ZoomIn from '../../assets/images/products/zoomin.svg';
 import Cart from '../../assets/images/products/cart.svg';
 import Button from '../button/button';
 
-const Matras = () => {
+const Matrass = () => {
   return (
     <div className='matras'>
       <div className='matras__container'>
@@ -67,4 +67,4 @@ const Matras = () => {
   )
 }
 
-export default Matras
+export default Matrass
