@@ -3,6 +3,7 @@ import Matras from '../../assets/images/products/matras.png';
 import ZoomIn from '../../assets/images/products/zoomin.svg';
 import Cart from '../../assets/images/products/cart.svg';
 import Button from '../button/button';
+import '../../assets/fonts/opensans/stylesheet.scss';
 const Products = () => {
   return (
     <div className="pro">
@@ -22,7 +23,9 @@ const Products = () => {
           </ul>
           <hr className="pro__hr" />
           <div className='pro__main'>
+
             <div className='matras'>
+              <div className='matras__container'>
               <div className='matras__left'>
                 <div className='matras__badges'>
                   <div className='matras__badges--left'>
@@ -77,7 +80,10 @@ const Products = () => {
 
                 <Button text={"Buyurtma berish"} img={Cart} alt={"Cart"} />
               </div>
+              </div>
             </div>
+
+
           </div>
         </div>
       </div>
