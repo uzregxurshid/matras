@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../../components/header/header'
 import Intro from '../../components/intro/intro.jsx'
 import Products from '../../components/products/products'
-import Stat from '../../components/stat/Stat'
+import Stat from '../../components/stat/stat'
 const Home = () => {
   return (
     <>

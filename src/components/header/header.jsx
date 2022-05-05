@@ -2,7 +2,7 @@ import React from 'react';
 import './header.scss';
 import '../../assets/fonts/Raleway/stylesheet.scss';
 import '../../assets/fonts/josephin/stylesheet.scss'
-import Navbar from '../navbar/Navbar';
+import Navbar from '../navbar/navbar';
 import Logo from '../../assets/images/header/logo.svg';
 import CallIcon from '../../assets/images/header/call.svg';
 import toggleopen from '../../assets/images/header/toggle.svg';
