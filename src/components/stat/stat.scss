@@ -1,4 +1,19 @@
+@mixin maxmedia($size) {
+  @media only screen and (max-width: $size) {
+    @content;
+  }
+}
+
+@mixin minmedia($size) {
+  @media only screen and (min-width: $size) {
+    @content;
+  }
+}
+
 .stat {
+  margin-top: 80px;
+  padding-bottom: 20px;
+
   &__list {
     display: flex;
     list-style-type: none;
@@ -31,5 +46,17 @@
     white-space: nowrap;
     color: #01384d;
     margin-top: 10px;
+  }
+
+  @include maxmedia(1260px){
+    &__header {
+      font-size: 100px;
+    }
+  }
+
+  @include maxmedia(1200px){
+    &__header {
+      font-size: 90px;
+    }
   }
 }
