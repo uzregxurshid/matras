@@ -2,8 +2,8 @@ import './stat.scss';
 const Stat = () => {
   return (
     <div className="stat">
-      <div className="stat__container">
-        <div className="container">
+      <div className="container">
+        <div className="stat__container">
           <ul className="stat__list">
             <li className="stat__item">
               <h2 className="stat__header">
