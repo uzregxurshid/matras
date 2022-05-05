@@ -5,6 +5,7 @@ import Cart from '../../assets/images/products/cart.svg';
 import Button from '../button/button';
 
 const Matrass = (props) => {
+  
   return (
     <div className='matras'>
       <div className='matras__container'>
@@ -20,7 +21,7 @@ const Matrass = (props) => {
               }
               {
                 props.sale && (
-                  <div className="matras__badges--sale">
+                  <div className="matras__badges--sale" >
                     Aksiya
                   </div>
                 )
@@ -32,9 +33,18 @@ const Matrass = (props) => {
               </button>
             </div>
           </div>
+          <div className='matras__header matras__header--hidden'>
+            {
+              props.header || "Ortopedik Eko matras"
+            }
+          </div>
           <div className='matras__img'>
             <img src={props.img || Matras} alt="matras" />
           </div>
+            <button className='matras__zoomin matras__badges--zoom' aria-label='zoom in' aria-hidden="true" onClick={props.onZoom}>
+                <img src={ZoomIn} alt="zoomin" />
+            </button>
+
         </div>
         <div className='matras__right'>
           <h2 className='matras__header'>
@@ -71,10 +81,10 @@ const Matrass = (props) => {
             <div className='matras__price--info'>Narxi</div>
             <div className='matras__price--flex'>
               {
-                props.sale&&(
+                props.sale && (
                   <div className='matras__price--old'>
-                  {props.old}
-                   </div>
+                    {props.old}
+                  </div>
                 )
               }
               <div className='matras__price--pricing'>{props.price || "1 699 999 so'm"}</div>
