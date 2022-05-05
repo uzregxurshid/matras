@@ -81,7 +81,7 @@ const Matrass = (props) => {
             <div className='matras__price--info'>Narxi</div>
             <div className='matras__price--flex'>
               {
-                props.sale && (
+                props.sale && props.old&& (
                   <div className='matras__price--old'>
                     {props.old}
                   </div>

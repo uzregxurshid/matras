@@ -25,19 +25,33 @@ const Products = () => {
 
             <ul className='pro__bazar'>
               <li className='pro__products'>
-                <Matras new={true}/>
+                <Matras new={true} />
               </li>
               <li className="pro__products">
-                <Matras new={true}/>
+                <Matras new={true} />
               </li>
               <li className="pro__products">
-                <Matras new={true}/>
+                <Matras new={true} />
               </li>
               <li className="pro__products">
-                <Matras new={true} sale={true} img={RedMatras} old={"1 699 999 so'm"}/>
+                <Matras new={true} sale={true} img={RedMatras} old={"1 699 999 so'm"} />
               </li>
             </ul>
 
+            <div className='pro__bigsale'>
+              <h2 className='pro__header pro__header--bigsale'>
+                Aksiyadagi mahsulotlar
+              </h2>
+
+              <ul className='pro__bazar'>
+              <li className='pro__products'>
+                <Matras sale={true} old={"1 699 999 so'm"} />
+              </li>
+              <li className="pro__products">
+                <Matras new={true} sale={true} img={RedMatras} old={"1 699 999 so'm"} />
+              </li>
+            </ul>
+            </div>
           </div>
         </div>
       </div>

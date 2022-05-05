@@ -391,4 +391,16 @@
 
   }
 
+  @include maxmedia(375px){
+    &__badges {
+      &--sale{
+        width: 91px;
+      }
+
+      &--new{
+        width: 171px;
+      }
+    }
+  }
+
 }

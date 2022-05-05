@@ -32,6 +32,19 @@
     font-size: 50px;
     line-height: 59px;
     color: #01384D;
+    text-align: center;
+
+    &--bigsale {
+      margin-top: 100px;
+      margin-bottom: 60px;
+    }
+  }
+
+  &__bigsale {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 
   &__list {
@@ -132,6 +145,11 @@
       display: flex;
       font-size: 30px;
       line-height: 30px;
+
+      &--bigsale{
+        margin-top: 80px;
+        margin-bottom: 40px;
+      }
     }
 
     &__btn {
@@ -141,4 +159,6 @@
       padding-right: 17px;
     }
   }
+
+  
 }
