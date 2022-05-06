@@ -108,6 +108,7 @@
 
   &__bazar {
     @include list-unstyled();
+    margin-bottom: 0;
   }
 
   &__hr {

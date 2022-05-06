@@ -1,0 +1,19 @@
+.tech {
+  margin-top: 138px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__header {
+    font-family: 'Raleway',Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 59px;
+    text-align: center;
+    color: #01384D;
+  }
+}
