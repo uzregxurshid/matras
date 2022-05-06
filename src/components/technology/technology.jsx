@@ -1,5 +1,9 @@
 import React from 'react'
 import './technology.scss';
+import LatexImg from '../../assets/images/tech/latex.png';
+import MemorImg from '../../assets/images/tech/memoriforum.png';
+import PrujiImg from '../../assets/images/tech/prujina.png';
+import PlayImg from '../../assets/images/tech/playbtn.svg';
 const Technology = () => {
   return (
     <div className="tech">
@@ -16,45 +20,44 @@ const Technology = () => {
                 Memoriform
               </p>
               <div className="tech__image">
-                <img className='tech__img' src="" alt="" />
+                <img className='tech__img' src={MemorImg} alt="Memoriform" />
                 <button className='tech__ply' type='button' aria-label='tech play video' aria-hidden="true">
-                    <img className='tech__ply--img' src="" alt="" />
+                  <img className='tech__ply--img' width={407} height={300} src={PlayImg} alt="" />
                 </button>
               </div>
               <p className='tech__desc'>
-                
+                Lectus pellentesque senectus elit donec massa ipsum ultricies dui. Bibendum et enim fringilla tincidunt ligula non, condimentum nunc.
               </p>
             </li>
             <li className='tech__items'>
               <p className='tech__title'>
-                Memoriform
+                Tabiiy lateks
               </p>
               <div className="tech__image">
-                <img className='tech__img' src="" alt="" />
+                <img className='tech__img' src={LatexImg} alt="Tabiiy lateks" />
                 <button className='tech__ply' type='button' aria-label='tech play video' aria-hidden="true">
-                    <img className='tech__ply--img' src="" alt="" />
+                  <img className='tech__ply--img' width={407} height={300} src={PlayImg} alt="" />
                 </button>
               </div>
               <p className='tech__desc'>
-                
+                Aliquam euismod ornare justo, sed faucibus eu. Sed amet tellus netus quis bibendum. Euismod diam eu sem tristique aenean rhoncus.
               </p>
             </li>
             <li className='tech__items'>
               <p className='tech__title'>
-                Memoriform
+                Mustaqil prujina
               </p>
               <div className="tech__image">
-                <img className='tech__img' src="" alt="" />
+                <img className='tech__img' src={PrujiImg} alt="Mustaqil prujina" />
                 <button className='tech__ply' type='button' aria-label='tech play video' aria-hidden="true">
-                    <img className='tech__ply--img' src="" alt="" />
+                  <img className='tech__ply--img' width={407} height={300} src={PlayImg} alt="" />
                 </button>
               </div>
               <p className='tech__desc'>
-                
+                Enim urna consequat, justo, cras tincidunt imperdiet orci sodales. Dui purus feugiat morbi quam orci, vel. Elementum tincidunt blandit ultricies venenatis rhoncus.
               </p>
             </li>
           </ul>
-
         </div>
       </div>
     </div>
