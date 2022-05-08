@@ -1,0 +1,125 @@
+@mixin maxmedia($size) {
+  @media only screen and (max-width: $size) {
+    @content;
+  }
+}
+
+@mixin minmedia($size) {
+  @media only screen and (min-width: $size) {
+    @content;
+  }
+}
+
+@mixin list-unstyled {
+  list-style: none;
+  padding-left: 0;
+}
+
+.about {
+  &__list {
+    @include list-unstyled();
+  }
+
+  &__container {
+    margin-top: 140px;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__items:nth-child(2) {
+    margin-top: 80px;
+    flex-direction: row-reverse;
+  }
+
+  &__items {
+
+    &--head {
+      font-family: 'Raleway', Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 64px;
+      color: #01384D;
+      width: 599px;
+      margin-bottom: 28px;
+    }
+
+    &--text {
+      font-family: 'Raleway', Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 26px;
+      color: #01384D;
+    }
+
+    ul {
+      list-style-type: disc;
+    }
+
+    ol {
+      list-style-type: decimal;
+    }
+
+    &--left {
+      width: 609px;
+    }
+
+    &--end {
+      font-family: 'Raleway', Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      color: #01384D;
+      margin-top: 30px;
+    }
+
+    &--video{
+      position: relative;
+    }
+
+    &--ply{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border:none;
+      background: none;
+      cursor: pointer;
+    }
+  }
+
+
+
+  &__desclist {
+    background: #EABF9F;
+    border: 2px solid #01384D;
+    border-radius: 8px;
+    padding-left: 30px;
+    padding-top: 24px;
+    padding-bottom: 23px;
+    width: 609px;
+    margin-top: 20px;
+    font-weight: 700;
+
+
+    &--text {
+      font-family: 'Raleway', Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 19px;
+      color: #01384D;
+    }
+
+    &--item~&--item {
+      margin-top: 14px;
+    }
+  }
+
+
+}

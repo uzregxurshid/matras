@@ -1,6 +1,7 @@
 import './about.scss';
 import VideoImg from '../../assets/images/about/image1.png';
 import OfficeImg from '../../assets/images/about/image2.png';
+import PlayButton from '../../assets/images/tech/playbtn.svg';
 const About = () => {
   return (
     <div className="about">
@@ -17,19 +18,28 @@ const About = () => {
                 </p>
                 <ul className='about__desclist'>
                   <li className='about__desclist--item'>
-                    Penatibus viverra gravida rhoncus in.
+                    <span className='about__desclist--text'>
+                      Penatibus viverra gravida rhoncus in.
+                    </span>
                   </li>
                   <li className='about__desclist--item'>
-                    Dolor integer in interdum viverra risus dolor enim.
+                    <span className='about__desclist--text'>
+                      Dolor integer in interdum viverra risus dolor enim.
+                    </span>
                   </li>
                   <li className='about__desclist--item'>
-                    Turpis senectus eu, eget aenean nulla pellentesque sed ut tempor.
+                    <span className='about__desclist--text'>
+                      Turpis senectus eu, eget aenean nulla pellentesque sed ut tempor.
+                    </span>
                   </li>
                 </ul>
               </div>
               <div className='about__items--right'>
                 <div className='about__items--video'>
                   <img className='about__items--image' src={VideoImg} alt="Matras" />
+                  <button className='about__items--ply'>
+                    <img src={PlayButton} alt="Play" />
+                  </button>
                 </div>
               </div>
             </li>
@@ -40,16 +50,24 @@ const About = () => {
                 </p>
                 <ol className='about__desclist'>
                   <li className='about__desclist--item'>
-                    Id risus phasellus laoreet eget. A nec pulvinar.
+                    <span className='about__desclist--text'>
+                      Id risus phasellus laoreet eget. A nec pulvinar.
+                    </span>
                   </li>
                   <li className='about__desclist--item'>
-                    Eu justo, tincidunt fringilla diam nulla.
+                    <span className='about__desclist--text'>
+                      Eu justo, tincidunt fringilla diam nulla.
+                    </span>
                   </li>
                   <li className='about__desclist--item'>
-                    Amet, nullam cras lacus, fermentum leo tellus sagittis.
+                    <span className='about__desclist--text'>
+                      Amet, nullam cras lacus, fermentum leo tellus sagittis.
+                    </span>
                   </li>
                   <li className='about__desclist--item'>
-                    Facilisi mauris condimentum sagittis odio rhoncus semper.
+                    <span className='about__desclist--text'>
+                      Facilisi mauris condimentum sagittis odio rhoncus semper.
+                    </span>
                   </li>
                 </ol>
                 <p className='about__items--end'>
