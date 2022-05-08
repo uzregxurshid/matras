@@ -1,4 +1,5 @@
 import React from 'react'
+import About from '../../components/about/about';
 import Header from '../../components/header/header';
 import Intro from '../../components/intro/intro';
 import Products from '../../components/products/products';
@@ -12,6 +13,7 @@ const Home = () => {
     <Stat/>
     <Products/>
     <Technology/>
+    <About/>
     </>
   )
 }
