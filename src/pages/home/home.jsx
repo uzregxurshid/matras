@@ -1,5 +1,6 @@
 import React from 'react'
 import About from '../../components/about/about';
+import Choose from '../../components/choose/choose';
 import Header from '../../components/header/header';
 import Intro from '../../components/intro/intro';
 import Products from '../../components/products/products';
@@ -14,6 +15,7 @@ const Home = () => {
     <Products/>
     <Technology/>
     <About/>
+    <Choose/>
     </>
   )
 }

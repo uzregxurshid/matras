@@ -1,0 +1,118 @@
+@mixin maxmedia($size) {
+  @media only screen and (max-width: $size) {
+    @content;
+  }
+}
+
+@mixin minmedia($size) {
+  @media only screen and (min-width: $size) {
+    @content;
+  }
+}
+
+@mixin list-unstyled {
+  list-style: none;
+  padding-left: 0;
+}
+
+.choose {
+  &__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 120px;
+  }
+
+  &__header {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 59px;
+    text-align: center;
+    color: #01384D;
+  }
+
+  &__list {
+    @include list-unstyled();
+    margin-top: 63px;
+    display: flex;
+  }
+
+  &__item {
+    width: 407px;
+    background: #FFFFFF;
+    border: 2px solid #01384D;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    padding-bottom: 21px;
+  }
+
+  &__item~&__item {
+    margin-left: 30px;
+  }
+
+  &__item {
+    &--img {
+      align-self: center;
+      border-radius: 3px 3px 0px 0px;
+      transform: scale(1.2);
+    }
+
+    &--body {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 60px;
+      padding-left: 28px;
+      padding-right: 27px;
+    }
+
+    &--header {
+      font-family: 'Raleway', Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      text-align: center;
+      color: #01384D;
+    }
+
+    &--text {
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+      text-align: center;
+      color: #01384D;
+      opacity: 0.7;
+      margin-top: 26px;
+    }
+
+    &--tel {
+      font-family: 'Raleway', Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 25px;
+      text-align: center;
+      text-decoration-line: underline;
+      color: #01384D;
+      margin-top: 30px;
+    }
+  }
+
+  @include maxmedia(1290px){
+    &__item {
+    width: 400px;
+    }
+  }
+
+
+
+
+}
