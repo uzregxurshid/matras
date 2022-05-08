@@ -5,6 +5,13 @@ import MemorImg from '../../assets/images/tech/memoriforum.png';
 import PrujiImg from '../../assets/images/tech/prujina.png';
 import PlayImg from '../../assets/images/tech/playbtn.svg';
 const Technology = () => {
+  const handleNext = (el, num) => {
+    document.querySelector('.tech__next--active').classList.remove('tech__next--active');
+    el.currentTarget.classList.add('tech__next--active');
+    document.querySelector('.tech__items--active').classList.remove('tech__items--active');
+    document.querySelectorAll('.tech__items')[num - 1].classList.add('tech__items--active');
+  }
+
   return (
     <div className="tech">
       <div className="container">
@@ -15,7 +22,7 @@ const Technology = () => {
           </h2>
 
           <ul className='tech__list'>
-            <li className='tech__items'>
+            <li className='tech__items tech__items--active'>
               <p className='tech__title'>
                 Memoriform
               </p>
@@ -56,6 +63,15 @@ const Technology = () => {
               <p className='tech__desc'>
                 Enim urna consequat, justo, cras tincidunt imperdiet orci sodales. Dui purus feugiat morbi quam orci, vel. Elementum tincidunt blandit ultricies venenatis rhoncus.
               </p>
+            </li>
+          </ul>
+
+          <ul className='tech__next'>
+            <li className='tech__next--items tech__next--active' onClick={(e) => handleNext(e, 1)}>
+            </li>
+            <li className='tech__next--items' onClick={(e) => handleNext(e, 2)}>
+            </li>
+            <li className='tech__next--items' onClick={(e) => handleNext(e, 3)}>
             </li>
           </ul>
         </div>
