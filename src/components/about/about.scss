@@ -26,7 +26,17 @@
 
   &__items {
     display: flex;
-    justify-content: space-between;
+
+    &--left {
+      margin-right: 46px;
+    }
+
+    &--left2 {
+      margin-right: 0;
+      width: 568px;
+      margin-left: 87px;
+    }
+
   }
 
   &__items:nth-child(2) {
@@ -78,18 +88,22 @@
       margin-top: 30px;
     }
 
-    &--video{
+    &--video {
       position: relative;
     }
 
-    &--ply{
+    &--ply {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      border:none;
+      border: none;
       background: none;
       cursor: pointer;
+    }
+
+    &--image {
+      width: 625px;
     }
   }
 
@@ -120,6 +134,8 @@
       margin-top: 14px;
     }
   }
+
+
 
 
 }

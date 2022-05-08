@@ -44,7 +44,7 @@ const About = () => {
               </div>
             </li>
             <li className='about__items'>
-              <div className='about__items--left'>
+              <div className='about__items--left about__items--left2'>
                 <p className='about__items--text'>
                   Libero erat praesent ullamcorper eget tortor sed et. Nec id lobortis gravida vitae. Scelerisque id fusce vitae ut. Integer sed vulputate sed nec. Arcu id mattis erat et id.
                 </p>
