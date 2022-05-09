@@ -106,13 +106,221 @@
     }
   }
 
-  @include maxmedia(1290px){
+  @include maxmedia(1290px) {
     &__item {
-    width: 400px;
+      width: 400px;
     }
   }
 
 
+  @include maxmedia(1290px) {
+    &__item~&__item {
+      margin-left: 20px;
+    }
+  }
 
+  @include maxmedia(1250px) {
+    &__item {
+      width: 375px;
+    }
+  }
+
+  @include maxmedia(1180px) {
+    &__header {
+      font-size: 40px;
+      line-height: 48px;
+    }
+
+    &__item {
+      width: 320px;
+    }
+  }
+
+  @include maxmedia(1080px) {
+    &__header {
+      font-size: 35px;
+      line-height: 42px;
+    }
+
+    &__item {
+      width: 300px;
+    }
+
+    &__item~&__item {
+      margin-left: 15px;
+    }
+
+    &__item--img {
+      border-radius: 3px 3px 0px 0px;
+      transform: scale(1.1);
+    }
+  }
+
+  @include maxmedia(960px) {
+    &__header {
+      font-size: 30px;
+      line-height: 36px;
+    }
+
+    &__item {
+      width: 270px;
+    }
+
+    &__item~&__item {
+      margin-left: 10px;
+    }
+
+    &__item--img {
+      border-radius: 3px 3px 0px 0px;
+      transform: scale(1);
+    }
+
+    &__item--body {
+      margin-top: 40px;
+    }
+
+    &__item--header {
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    &__item--text {
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    &__item--tel {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+
+  @include maxmedia(850px) {
+    &__header {
+      font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 28px;
+      text-align: center;
+      color: #01384D;
+    }
+
+    &__item {
+      width: 240px;
+    }
+
+    &__item~&__item {
+      margin-left: 5px;
+    }
+
+    &__item {
+      &--body {
+        margin-top: 30px;
+        padding-right: 29px;
+        padding-left: 29px;
+      }
+
+      &--header {
+        font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 18px;
+        text-align: center;
+        color: #01384D;
+      }
+
+      &--text {
+        font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 25px;
+        text-align: center;
+        color: #01384D;
+        opacity: 0.7;
+      }
+
+      &--tel {
+        font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 25px;
+        text-align: center;
+        text-decoration-line: underline;
+        color: #01384D;
+      }
+    }
+  }
+
+  @include maxmedia(750px) {
+    &__list {
+      flex-direction: column;
+    }
+
+    &__item~&__item {
+      margin-left: 0;
+    }
+
+    &__item {
+      margin-top: 27px;
+      width: 400px;
+    }
+
+    &__item {
+      &--header {
+        font-size: 25px;
+      }
+
+      &--text {
+        font-size: 18px;
+      }
+
+      &--tel {
+        font-size: 18px;
+      }
+    }
+  }
+
+
+  @include maxmedia(420px) {
+
+    &__container {
+      margin-top: 90px;
+    }
+
+
+    &__item {
+      width: 100%;
+    }
+
+
+    &__header {
+      font-size: 28px;
+      line-height: 28px;
+      white-space: nowrap;
+    }
+
+    &__item {
+      &--header {
+        font-size: 18px;
+        line-height: 18px;
+      }
+
+      &--text {
+        font-size: 14px;
+        line-height: 25px;
+      }
+    }
+    
+    &__list {
+      margin-top: 42px;
+    }
+
+  }
+
+  
 
 }
