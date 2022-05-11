@@ -1,0 +1,33 @@
+.contact {
+  background: #EABF9F;
+  margin-top: 90px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  &__header {
+    font-family: 'Raleway',Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    color: #01384D;
+  }
+
+  &__desc {
+
+    font-family: 'Raleway',Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #01384D;
+    margin-top: 10px;
+  }
+
+}
