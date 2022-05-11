@@ -34,22 +34,22 @@ const Footer = () => {
           </div>
           <div className="footer__right">
             <ul className="footer__social">
-              <li className="footer__social-item">
+              <li className="footer__social--item">
                 <a href="/" className="footer__social-link">
                   <img className='footer__social__img' src={FacebookImg} alt="Facebook" />
                 </a>
               </li>
-              <li className="footer__social-item">
+              <li className="footer__social--item">
                 <a href="/" className="footer__social-link">
                   <img className='footer__social__img' src={TwitterImg} alt="Twitter" />
                 </a>
               </li>
-              <li className="footer__social-item">
+              <li className="footer__social--item">
                 <a href="/" className="footer__social-link">
                   <img className='footer__social__img' src={VimeoImg} alt="Vimeo" />
                 </a>
               </li>
-              <li className="footer__social-item">
+              <li className="footer__social--item">
                 <a href="/" className="footer__social-link">
                   <img className='footer__social__img' src={YouTubeImg} alt="Youtube" />
                 </a>
