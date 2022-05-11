@@ -30,8 +30,6 @@ const Header = () => {
               </div>
               <div className='header__main--order'>
                <Button text={"Buyurtma berish"}/>
-                
-              
               </div>
             </div>
             <div className='header__main--hidden'>

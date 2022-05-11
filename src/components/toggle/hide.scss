@@ -7,7 +7,7 @@
   width: 100%;
   overflow-x: hidden;
   top: 0;
-  height: 100vh;
+  height: calc(100vh);
   left: 0;
   z-index: 1;
   background: #EABF9F;
@@ -27,6 +27,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: calc(100vw - 60px);
 
     &--btn {
       background: #EABF9F;
@@ -56,7 +57,7 @@
   }
 
   &__order {
-    margin-top: 45px;
+    margin-top: 35px;
   }
 
   &__call{
