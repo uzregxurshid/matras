@@ -11,6 +11,8 @@ const Location = () => {
             <h2 className="location__header">
               Manzilimiz
             </h2>
+            <img className='location__img--hidden' src={LocCover} alt="Location" width={525} height={321} />
+
             <div className='location__body'>
               <p className='location__loc'>
                 Toshkent, Parkent ko'chasi, 176-uy
@@ -22,7 +24,7 @@ const Location = () => {
             </div>
           </div>
           <div className="location__right">
-            <img src={LocCover} alt="Location" />
+            <img className='location__img' src={LocCover} alt="Location" width={525} height={321} />
           </div>
         </div>
       </div>

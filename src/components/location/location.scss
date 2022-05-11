@@ -1,3 +1,20 @@
+@mixin list-unstyled {
+  list-style: none;
+  padding-left: 0;
+}
+
+@mixin maxmedia($size) {
+  @media only screen and (max-width: $size) {
+    @content;
+  }
+}
+
+@mixin minmedia($size) {
+  @media only screen and (min-width: $size) {
+    @content;
+  }
+}
+
 .location {
   margin-top: 130px;
 
@@ -45,7 +62,87 @@
     margin-right: 15px;
   }
 
-  &__left{
-    width:470px;
+  &__left {
+    width: 485px;
+  }
+
+  &__img {
+    &--hidden {
+      display: none;
+    }
+  }
+
+  @include maxmedia(1080px) {
+    &__header {
+      font-size: 40px;
+      line-height: 45px;
+    }
+
+    &__loc {
+      font-size: 24px;
+      line-height: 30px;
+    }
+
+    &__def {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &__left {
+      width: 450px;
+    }
+  }
+
+  @include maxmedia(960px) {
+    &__header {
+      font-size: 30px;
+      line-height: 36px;
+    }
+
+    &__loc {
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    &__left {
+      margin-right: 10px;
+    }
+
+
+  }
+
+  @include maxmedia(768px) {
+    margin-top: 70px;
+    &__right {
+      display: none;
+    }
+
+    &__container {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    &__img{
+      &--hidden {
+        margin-top: 20px;
+        display: block;
+      }
+    }
+
+    &__loc{
+      margin-top: 25px;
+    }
+
+    &__def{
+      margin-top: 10px;
+      margin-bottom: 25px;
+    }
+  }
+
+  @include maxmedia(500px) {
+    &__left{
+      width: 100%;
+    }
   }
 }
