@@ -23,7 +23,6 @@ const Contact = () => {
                 Yuborish
               </button>
             </form>
-
           </div>
         </div>
       </div>
