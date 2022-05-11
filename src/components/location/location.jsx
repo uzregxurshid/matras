@@ -1,7 +1,32 @@
 import './location.scss';
+import LocImg from '../../assets/images/loc/loc.svg';
+import Button from '../button/button';
+import LocCover from '../../assets/images/loc/locPng.png';
 const Location = () => {
   return (
-    <>OK</>
+    <div className="location">
+      <div className="container">
+        <div className="location__container">
+          <div className="location__left">
+            <h2 className="location__header">
+              Manzilimiz
+            </h2>
+            <div className='location__body'>
+              <p className='location__loc'>
+                Toshkent, Parkent ko'chasi, 176-uy
+              </p>
+              <p className='location__def'>
+                Mo'ljal: Qoraqamish 2/1, Tursunxodjayeva ro'parasi, Milliy bog' metro bekati.
+              </p>
+              <Button text={"Geolokatsiya"} img={LocImg} class={"location__btn"} classimg={"location__bimg"} />
+            </div>
+          </div>
+          <div className="location__right">
+            <img src={LocCover} alt="Location" />
+          </div>
+        </div>
+      </div>
+    </div>
   )
 }
 
