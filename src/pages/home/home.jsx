@@ -8,6 +8,7 @@ import Location from '../../components/location/location';
 import Products from '../../components/products/products';
 import Stat from '../../components/stat/stat';
 import Technology from '../../components/technology/technology';
+import Footer from '../../components/footer/footer';
 const Home = () => {
   return (
     <>
@@ -20,6 +21,7 @@ const Home = () => {
       <Choose />
       <Location />
       <Contact />
+      <Footer/>
     </>
   )
 }
