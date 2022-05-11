@@ -1,3 +1,20 @@
+@mixin list-unstyled {
+  list-style: none;
+  padding-left: 0;
+}
+
+@mixin maxmedia($size) {
+  @media only screen and (max-width: $size) {
+    @content;
+  }
+}
+
+@mixin minmedia($size) {
+  @media only screen and (min-width: $size) {
+    @content;
+  }
+}
+
 .contact {
   background: #EABF9F;
   margin-top: 90px;
@@ -11,7 +28,7 @@
   }
 
   &__header {
-    font-family: 'Raleway',Arial, Helvetica, sans-serif;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -21,7 +38,7 @@
 
   &__desc {
 
-    font-family: 'Raleway',Arial, Helvetica, sans-serif;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -30,4 +47,74 @@
     margin-top: 10px;
   }
 
+  &__form {
+    display: flex;
+    align-items: center;
+  }
+
+  &__inputting {
+    position: relative;
+  }
+
+  &__input {
+    width: 420px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border: none;
+    background: #FFFFFF;
+    border-radius: 5px;
+    padding-left: 84px;
+    font-family: 'Raleway',Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    &::placeholder {
+      font-family: 'Raleway', Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #01384D;
+      opacity: 0.4;
+
+
+
+    }
+
+    &::-webkit-input-placeholder::before {
+      visibility: visible;
+    }
+
+    &--before {
+      font-family: 'Raleway',Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      color: #01384D;
+      position: absolute;
+      z-index: 1;
+      top:50%;
+      left: 23px;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__submit {
+    width: 240px;
+    height: 60px;
+    background: #01384D;
+    border-radius: 5px;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    border: none;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    margin-left: 15px;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
 }

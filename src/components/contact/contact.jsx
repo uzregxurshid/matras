@@ -14,8 +14,11 @@ const Contact = () => {
             </p>
           </div>
           <div className="contact__right">
-            <form className='contact__inputs'>
-              <input className='contact__input' type="tel" name="phone" id="phone" placeholder='Raqamingizni yozing'/>
+            <form className='contact__form'>
+              <div className="contact__inputting">
+                <span className='contact__input--before'>+998 |</span>
+                <input className='contact__input' type="tel" name="phone" id="phone" placeholder='Raqamingizni yozing'/>
+              </div>
               <button className='contact__submit' type='submit'>
                 Yuborish
               </button>
